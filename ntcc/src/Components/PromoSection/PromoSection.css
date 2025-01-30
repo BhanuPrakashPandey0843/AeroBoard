@@ -1,0 +1,47 @@
+/* PromoSection.css */
+
+/* Background gradient animation */
+.bg-gradient-animation {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(120deg, #38bdf8, #4ade80, #facc15);
+    background-size: 200% 200%;
+    animation: gradientMove 8s ease infinite;
+    opacity: 0.8;  
+    z-index: -1;
+  }
+  
+  /* White shade on top */
+  .bg-white-overlay {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), transparent);
+    opacity: 0.9;
+    height: 70%;
+  }
+  
+  /* Gradient background animation */
+  @keyframes gradientMove {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  /* Optional: Fading in the elements */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .animate-fadeIn {
+    animation: fadeIn 2s ease forwards;
+  }
+  

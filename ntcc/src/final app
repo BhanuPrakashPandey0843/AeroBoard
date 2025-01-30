@@ -1,0 +1,22 @@
+import React, { Suspense, lazy } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+// Lazy load pages for better performance
+const HomePage = lazy(() => import("./Pages/LandingPage"));
+
+
+const App = () => {
+  return (
+    <Router>
+      <Suspense fallback={<div>Loading...</div>}>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/home" element={<HomePage />} />
+      
+        </Routes>
+      </Suspense>
+    </Router>
+  );
+};
+
+export default App;
