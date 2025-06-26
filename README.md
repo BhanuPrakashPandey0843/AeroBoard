@@ -1,7 +1,7 @@
 # AeroBoard
 
 **Live Demo**: [https://aero-board.netlify.app/home](https://aero-board.netlify.app/home)
-**GitHub Repository**: [AeroBoard GitHub](https://github.com/BhanuPrakashPandey0843/AeroBoard)
+
 
 ## Overview
 
@@ -143,11 +143,6 @@ Refer to the following files for a deeper understanding:
 
 ---
 
-## License
-
-This project is licensed under the **MIT License**. See `LICENSE` for details.
-
----
 
 ## Contact
 
